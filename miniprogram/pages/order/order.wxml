@@ -1,0 +1,64 @@
+<!--pages/order/order.wxml-->
+<view class="border-tip">
+  <text>请及时处理已经确定家教关系的订单。</text>
+</view>
+<view style="margin-top:100rpx">
+  <abbr style="border-bottom: 1px dotted #FFFFFb; width:22%" />
+</view>
+<block wx:for="{{orders}}" wx:for-index="index" wx:key="newDateTime">
+  <view class="item">
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>求教科目：</text>
+      <text>{{item.subject}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>学员要求：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.require}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>学员情况：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.message}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>学员信息：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.sex}} {{item.grade}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>授课区域：</text>
+      <text style="color:rgb(27, 58, 235)">{{item.address}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>家教报酬：</text>
+      <text style="color: rgb(236, 23, 23);">{{item.wage}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>发布时间：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.date}}</text>
+      <button wx:if="{{item.online}}" bindtap="bindchange" class="change" id="{{index}}">改为已预约</button>
+      <text wx:else style="color:rgb(40, 230, 15);">已预约</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>联系人：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.name }}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>电话：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.phone }}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>微信：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.weixin }}</text>
+    </view>
+  </view>
+
+</block>

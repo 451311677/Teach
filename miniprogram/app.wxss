@@ -1,0 +1,39 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+
+button {
+  background: initial;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+
+/*横向布局*/
+.layout_horizontal{
+  height:100rpx;
+  display:flex;
+  flex-direction:row;
+}
+
+.layout_vertical{
+  height:100rpx;
+  display:flex;
+  flex-direction:column;
+}
+
+/*下划线*/
+.line{
+  background-color:blue;
+  height:2rpx;
+  width:100%;
+}

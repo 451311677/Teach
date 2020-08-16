@@ -1,0 +1,113 @@
+<!-- <view  class='background' style="background-image: url({{homebackgroundPath}})"> -->
+<view class='content'>
+  <view class="home-city">
+    <text class="home-city-left">{{city}}</text>
+    <button class="serve" open-type="contact" hover-class='none'>客服反馈</button>
+  </view>
+  <view style="width:100%;">
+    <image src="{{adverPath}}" style="width:100%;" mode="aspectFix"></image>
+  </view>
+  <view class='history-table-wrap'>
+    <view class="table">
+      <view class="tr">
+        <view class="th2 "></view>
+      </view>
+      <view class="tr">
+        <view class="th1 ">
+          <text class="font-item1">{{orderNum+orderstart}}</text>
+        </view>
+        <view class="th1 ">
+          <text class="font-item1">{{teacherNum+teacherstart}}</text>
+        </view>
+        <view class="th3 ">
+          <text class="font-item1">{{userNum+userstart+teacherNum}}</text>
+        </view>
+      </view>
+      <view class="tr">
+        <view class="th1 ">
+          <text class="font-item2">完成订单</text>
+        </view>
+        <view class="th1 ">
+          <text class="font-item2">教员数量</text>
+        </view>
+        <view class="th3 " style=" border-right: 1px solid rgb(245, 243, 243);">
+          <text class="font-item2">用户总量</text>
+        </view>
+      </view>
+      <view class="tr">
+        <view class="th2 "></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="stu-teacher-ku">
+    <view class="inner-ku" style="margin-left:0%;">
+      <view style=" display:flex;flex-direction: row; ">
+        <image class="image" src="../../images/student.jpg" />
+        <view class="inner-text" bindtap="bindPubStudent">
+          <text>快速请家教</text>
+        </view>
+      </view>
+      <view style=" display:flex;flex-direction: row; ">
+        <text class="inner-me">我是学生</text>
+        <view>
+          <text bindtap="bindTeacherTap" class="ku" style="color:rgb(0, 190, 149)">教员库</text>
+        </view>
+      </view>
+    </view>
+    <view style="width:10%;">
+    </view>
+    <view class="inner-ku" style="margin-left:0%;">
+      <view style=" display:flex;flex-direction: row; ">
+        <image class="image" src="../../images/teacher.jpg" />
+        <view class="inner-text" bindtap="bindPubTeacher">
+          <text>我要做教员</text>
+        </view>
+      </view>
+      <view style=" display:flex;flex-direction: row; ">
+        <text class="inner-me">我是老师</text>
+        <view>
+          <text bindtap="bindStudentTap" class="ku" style="color:rgb(243, 137, 50)">学员库</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='history-table-wrap'>
+    <view class="table">
+      <view class="tr">
+        <view class="th2 "></view>
+      </view>
+
+      <view class="tr">
+        <view bindtap="bindCooperation" class="th12 ">
+          <text class="font-item3">商务合作</text>
+        </view>
+        <view bindtap="bindIntroduce" class="th12 ">
+          <text class="font-item3">平台概况</text>
+        </view>
+        <view class="th32 " style=" border-right: 1px solid rgb(245, 243, 243);">
+          <button open-type="share" hover-class='none' class="font-item3" style="margin-top:-15rpx;">乐于分享</button>
+        </view>
+      </view>
+      <view class="tr">
+        <view class="th2 "></view>
+      </view>
+    </view>
+  </view>
+  <view class="last">
+    <text>平台宗旨</text>
+  </view>
+  <view class="last-content">
+    <view class="font-last">
+      <text>教习为师  身正为范</text>
+    </view>
+    <view class="font-last">
+      <text>因材施教  夯实基础</text>
+    </view>
+  </view>
+
+
+
+
+</view>

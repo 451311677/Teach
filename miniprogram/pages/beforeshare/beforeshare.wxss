@@ -1,0 +1,49 @@
+/* pages/beforeshare/beforeshare.wxss */
+
+
+.window{
+  height:40%;
+  width:80%;
+  margin-top:50%;
+  margin-left:10%;
+  background-color:rgb(235, 235, 235)
+}
+.title{
+  margin-top:10rpx;
+  text-align: center;
+  font-fize:15px;
+}
+.text{
+  width:80%;
+  margin-left:10%;
+  margin-top:30rpx;
+  font-size:13px;
+  color:rgb(104, 104, 104);
+}
+page{
+  background-color:rgba(53, 53, 53, 0.644);
+}
+
+.tr {
+  width: 100%;
+  margin-top:40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.th12 {
+  height: 60rpx;
+  border-top: 1px solid rgb(211, 211, 211);
+  border-right: 1px solid rgb(211, 211, 211);
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.button {
+  text-align: center;
+  font-size: 14px;
+
+}

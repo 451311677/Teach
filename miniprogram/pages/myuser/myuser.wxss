@@ -1,0 +1,21 @@
+.item{
+  display:flex;
+  flex-direction: column;
+  width: 94%;
+  border-width: 5rpx;
+  border-color: rgb(105, 146, 192);
+  border-style: solid;
+  margin-top:10rpx;
+  margin-left: 3%;
+  font-size:13px;
+  font-family: "宋体"
+ 
+}
+.item-row{
+  display:flex;
+  flex-direction: row;
+}
+.font-style{
+  font-weight:bold;
+  color:rgb(116, 115, 115);
+}

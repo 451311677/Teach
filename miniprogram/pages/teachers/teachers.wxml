@@ -1,0 +1,53 @@
+<!--pages/teachers/teachers.wxml-->
+<view class="border-tip">
+  <text>欢迎入驻伯乐家教。教员顺序由系统根据教员受欢迎程度以及教员分享平台次数排序。在线预约之前请先完善个人信息(重点：联系方式)</text>
+</view>
+<view style="margin-top:163rpx">
+<abbr style="border-bottom: 1px dotted #FFFFFb; width:22%" />
+</view>
+<block wx:for="{{teachers}}" wx:key="newDateTime" wx:for-index="index">
+  <view class="item">
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="font-weight:bold;color:rgb(116, 115, 115)">{{item.user}}（{{item.sex}})</text>
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:10% " />
+      <text >{{item.major}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="color:rgb(52, 163, 67);">{{item.education}}</text>
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:20% " />
+      <text>{{item.date}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="font-weight:bold;color:rgb(0, 0, 0);">教授科目：</text>
+      
+      <text >{{item.subject}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="font-weight:bold;color:rgb(0, 0, 0);">授课地区：</text>
+      <text >{{item.classadress}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="font-weight:bold;color:rgb(0, 0, 0);">授课时间：</text>
+      <text >{{item.classtime}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="font-weight:bold;color:rgb(116, 115, 115)">薪水要求：</text>
+      <text >{{item.wage}}</text>
+      <button class="contact" bindtap="bindcontact" id="{{index}}">在线预约</button>
+    </view>
+    <view class="item-row">
+       <button  style="width:94%;height:20rpx;background-color:rgb(255, 255, 255);color:rgb(255, 255, 255);border-radius: 3%;"></button>
+    </view>
+  </view>
+</block>
+<view style="margin-top:20rpx">
+  <button style="width:94%;height:40rpx;background-color:rgb(255, 255, 255);color:rgb(255, 255, 255);border-radius: 3%;"></button>
+</view>
+
+

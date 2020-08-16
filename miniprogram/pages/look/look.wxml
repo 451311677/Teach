@@ -1,0 +1,60 @@
+<!--pages/teachers/teachers.wxml-->
+<view style="margin-top:20rpx">
+  <abbr style="border-bottom: 1px dotted #FFFFFb; width:22%" />
+</view>
+<block wx:for="{{teachers}}" wx:key="newDateTime" wx:for-index="index">
+  <view class="item">
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="font-weight:bold;color:rgb(116, 115, 115)">{{item.name}}（{{item.sex}})</text>
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:10% " />
+      <text>{{item.major}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="color:rgb(52, 163, 67);">{{item.education}}</text>
+
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="font-weight:bold;color:rgb(0, 0, 0);">教授科目：</text>
+
+      <text>{{item.subject}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="font-weight:bold;color:rgb(0, 0, 0);">授课地区：</text>
+      <text>{{item.classadress}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="font-weight:bold;color:rgb(0, 0, 0);">授课时间：</text>
+      <text>{{item.classtime}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="font-weight:bold;color:rgb(0, 0, 0);">薪水要求：</text>
+      <text>{{item.wage}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="font-weight:bold;color:rgb(0, 0, 0);">电话：</text>
+      <text>{{item.phone}}</text>
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:20% " />
+      <text bindtap="bindcopy" style="color:rgb(255, 19, 19);" id="{{index}}">复制</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="font-weight:bold;color:color:rgb(0, 0, 0);">注册时间：</text>
+      <text>{{item.date}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text style="font-weight:bold;color:color:rgb(0, 0, 0);">预约信息:</text>
+      <text>{{item.message}}</text>
+    </view>
+    <view class="item-row">
+      <button style="width:94%;height:20rpx;background-color:rgb(255, 255, 255);color:rgb(255, 255, 255);border-radius: 3%;"></button>
+    </view>
+  </view>
+</block>

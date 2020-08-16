@@ -1,0 +1,84 @@
+<!--pages/editteacher/editteacher.wxml-->
+<view class="border-tip">
+  <text>以您发布的最新一条教员信息作为您的教员信息</text>
+</view>
+<view style="margin-top:93rpx">
+  <abbr style="border-bottom: 1px dotted #FFFFFb; width:22%" />
+</view>
+<view class="item">
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">姓名：{{teacher[length-1].name}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">性别：{{teacher[length-1].sex}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">年龄：{{teacher[length-1].age}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">授课区域：{{teacher[length-1].classadress}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">授课时间：{{teacher[length-1].classtime}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">电话：{{teacher[length-1].phone}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">教授科目：{{teacher[length-1].subject}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">学历：{{teacher[length-1].education}}</text>
+  </view>
+   <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">专业：{{teacher[length-1].major}}</text>
+  </view>
+   <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">薪水：{{teacher[length-1].wage}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+</view>
+
+

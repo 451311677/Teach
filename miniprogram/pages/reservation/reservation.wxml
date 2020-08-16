@@ -1,0 +1,25 @@
+<!--pages/reservation/reservation.wxml-->
+<view class="border-all">
+  <view style="background-color:rgb(238, 238, 238);height:20rpx;">
+    <abbr style="border-bottom: 1px dotted #FFFFFb; width:22%" />
+  </view>
+  <view class="title" style="border-bottom: 5rpx;border-color: rgb(124, 148, 228);">
+    <text>提交预约申请</text>
+  </view>
+  <view style="margin-top:30rpx;margin-left:5%;">
+    <text>{{teacher[length-1].name}}您好，你在这里可以提交预约申请，申请前，请确保您能带这个订单,并且在本平台已注册成为教员。伯乐家教将以先到先得，择优的原则向家长推荐。</text>
+  </view>
+  <view style="margin-top:30rpx;">
+    <textarea class="innerborder" bindinput="bindinput" maxlength='120' placeholder="请填写接单补充说明"/>
+  </view>
+  <view style="margin-top:160rpx;margin-left:5%">
+  <text>{{message_length}}/120</text>
+  </view>
+  <view class="button0">
+    <button bindtap="yes" class="yes">提交预约申请</button>
+    <button bindtap="back" class="back">返回</button>
+  </view>
+  <view style="margin-top:20rpx">
+  <abbr style="border-bottom: 1px dotted #FFFFFb; width:22%" />
+</view>
+</view>

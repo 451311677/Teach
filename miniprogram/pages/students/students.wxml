@@ -1,0 +1,64 @@
+<!--pages/students/students.wxml-->
+<view class="border-tip">
+  <text>本平台为各位学子提供海量教员，各位老师可以预约未安排教员的学员订单，我们根据预约顺序，则优的原则向家长推荐。点击授课区域可查看交通路线。仅显示最新30条订单。"√"表示订单已安排教员</text>
+</view>
+<view style="margin-top:200rpx">
+  <abbr style="border-bottom: 1px dotted #FFFFFb; width:22%" />
+</view>
+<block wx:for="{{students}}" wx:for-index="index" wx:key="newDateTime">
+  <view class="item">
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>求教科目：</text>
+      <text>{{item.subject}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>学员要求：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.require}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>学员情况：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.message}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>学员信息：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.sex}} {{item.grade}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>授课区域：</text>
+      <text bindtap="getline" id="{{index}}" style="color:rgb(27, 58, 235) ">{{item.address}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>授课时间：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.time}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>家教报酬：</text>
+      <text style="color: rgb(236, 23, 23);">{{item.wage}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>发布时间：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.date}}</text>
+      <text wx:if="{{item.online}}"></text>
+      <text wx:else style="color:rgb(27, 58, 235)">√</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>联系人：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.name }}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>如果您对此订单感兴趣：</text>
+      <text style="color: rgb(236, 23, 23)" bindtap="reservation" id="{{index}}">点击预约</text>
+    </view>
+  </view>
+
+</block>

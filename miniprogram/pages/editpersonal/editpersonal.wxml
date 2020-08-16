@@ -1,0 +1,84 @@
+<!--pages/editpersonal/editpersonal.wxml-->
+<!--pages/pubteacher/pubteacher.wxml-->
+<view class="border-tip">
+  <text>为了您能在使用本平台时有较好的体验，以及应对家教过程中的一些意外情况，请仔细填写以下内容！您的所有信息我们会严格加密。信息不完整会导致部分功能不能正常使用。</text>
+</view>
+
+<view style="margin-top:180rpx">
+  <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+</view>
+<view style="margin-top:110rpx;width:100%;height:1rpx;background-color: rgb(255, 255, 255);"></view>
+<view class="inputborder">
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;">手机：</text>
+    <input class="innerborder" bindinput="bindPhoneinput" maxlength='11' />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text>姓名：</text>
+    <input class="innerborder" bindinput="bindNameinput" />
+    <br/>
+    <view style="margin-left:21%;margin-top:63rpx">
+      <text style="margin-top:63rpx;font-size:10px;color:red ">此项将严格保密，请填写真实姓名</text>
+    </view>
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;">Q Q：</text>
+    <input class="innerborder" bindinput="bindQQinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;">微信：</text>
+    <input class="innerborder" bindinput="bindWeixininput" />
+  </view>
+  <abbr class="abbr"></abbr>
+  
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text>性别： </text>
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:22%" />
+    <radio-group style="mrgin-left:50rpx" bindchange="bindSexinput">
+      <radio value="男" />男
+      <radio value="女" />女
+    </radio-group>
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;">年龄：</text>
+    <input class="innerborder" bindinput="bindAgeinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text>身份： </text>
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:22%" />
+    <radio-group style="mrgin-left:50rpx" bindchange="bindIdentityinput">
+      <radio value="学员" />学员
+      <radio value="教员" />教员
+    </radio-group>
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;">省：</text>
+    <input class="innerborder" bindinput="bindProvinceinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;">市：</text>
+    <input class="innerborder" bindinput="bindCityinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;">职业：</text>
+    <input class="innerborder" bindinput="bindMajorinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+</view>
+
+
+<view style="margin-top:1080rpx">
+  <button bindtap="bindSubmitTeach" class="submit">提交</button>
+</view>
+
+<view style="margin-top:20rpx">
+  <button style="width:94%;height:70rpx;background-color:rgb(255, 255, 255);color:rgb(255, 255, 255);border-radius: 3%;"></button>
+</view>

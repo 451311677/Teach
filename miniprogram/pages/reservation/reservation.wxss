@@ -1,0 +1,55 @@
+/* pages/reservation/reservation.wxss */
+
+.border-all {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  border-width: 5rpx;
+  border-color: rgb(221, 221, 221);
+  border-style: solid;
+  margin-top: 200rpx;
+  margin-left: 3%;
+  font-size: 13px;
+}
+
+.title {
+  height: 60rpx;
+  color: rgb(255, 42, 42);
+  background-color: rgb(238, 238, 238);
+  font-size: 18px;
+  font-family: "楷体";
+  text-align: center;
+}
+
+.innerborder {
+  width: 84%;
+  height: 140rpx;
+  border-width: 2rpx;
+  border-color: rgb(206, 206, 206);
+  border-style: solid;
+  position: absolute;
+  margin-top: 5rpx;
+  margin-left: 5%;
+}
+
+.button0 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+}
+
+.yes {
+  background-color: rgb(47, 253, 109);
+  height:60rpx;
+  width:40%;
+  font-size:12px;
+  color:aliceblue;
+}
+
+.back {
+  background-color: rgb(134, 134, 134);
+  height:60rpx;
+  width:40%;
+  font-size:12px;
+  color:aliceblue;
+}

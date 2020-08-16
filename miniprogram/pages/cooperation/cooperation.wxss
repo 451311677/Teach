@@ -1,0 +1,22 @@
+/* pages/cooperation/cooperation.wxss */
+
+.title {
+  text-align: center;
+  width: 100%;
+  height: 60rpx;
+  margin-top: 80rpx;
+  font-size: 16px;
+  font-family: '楷体';
+  border-bottom: 2px solid rgb(170, 170, 170);
+}
+
+.text {
+  width: 92%;
+  letter-spacing: 5rpx;
+  height: 300rpx;
+  margin-top: 60rpx;
+  font-size: 14px;
+  font-family: '楷体';
+  color: rgb(129, 129, 129);
+  margin-left: 4%;
+}

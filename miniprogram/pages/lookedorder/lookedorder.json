@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "已查看订单",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#2ADBFA"
+}

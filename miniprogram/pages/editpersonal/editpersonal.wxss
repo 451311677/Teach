@@ -1,0 +1,54 @@
+/* pages/editpersonal/editpersonal.wxss */
+
+.border-tip{
+  width: 94%;
+  border-width: 5rpx;
+  border-color: rgb(128, 157, 255);
+  border-style: solid;
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  background-color: rgb(211, 221, 255);
+  color:rgb(50, 65, 78);
+  font-size:12px;
+  font-family: "楷体";
+}
+
+.inputborder{
+  display:flex;
+  flex-direction: column;
+  width: 94%;
+  
+  position: absolute;
+  left: 3%;
+ 
+  color:rgb(50, 65, 78);
+  font-size:15px;
+  font-family: "楷体";
+}
+.innerborder{
+  width: 60%;
+  border-width: 2rpx;
+  border-color: rgb(206, 206, 206);
+  border-style: solid;
+  position: absolute;
+  margin-top:5rpx;
+  right: 3%;
+}
+.abbr{
+  
+  width:94%;
+  margin-top:35rpx;
+  border-bottom: 1px dotted rgb(206, 206, 206);
+  margin-left:3%;
+}
+.submit{
+  width:94%;
+  height:70rpx;
+  background-color:rgb(57, 93, 255);
+  color:aliceblue;
+  border-radius: 3%;
+  font-size: 13px;
+  vertical-align:middle;
+  text-align:center;
+}

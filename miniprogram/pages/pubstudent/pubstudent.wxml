@@ -1,0 +1,80 @@
+<!--pages/pubstudent/pubstudent.wxml-->
+<view class="border-tip">
+  <text>请家教方法：\n自主填写订单，教员会在看到您的订单信息后主动预约您。我们会根据预约信息，结合您的意见，安排最优秀的教员给您，任您挑选。为了更好的帮您找到合适的老师，请尽量详细填写以下表单.*为必填(联系方式请填写真实信息。虚假信息可向客服反馈取消订单)</text>
+</view>
+<view class="item-tip" style="margin-top:250rpx">
+  <text>请填写以下表单</text>
+</view>
+<view class="inputborder">
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(240, 58, 58);">*</text>联系人：</text>
+    <input class="innerborder" bindinput="bindNameinput" placeholder="例：刘女士"/>
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(240, 58, 58);">*</text>联系电话：</text>
+    <input class="innerborder" bindinput="bindPhoneinput" maxlength='11'/>
+  </view>
+  <abbr class="abbr"></abbr>
+   <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(240, 58, 58);">*</text>微信：</text>
+    <input class="innerborder" bindinput="bindWeixininput" />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(240, 58, 58);">*</text>授课地区：</text>
+    <text class="innerborder" bindtap="bindaddress">{{address}}</text>
+    <br/>
+    <view style="margin-left:16%;margin-top:80rpx">
+      <text style="font-size:10px;color: rgb(179, 177, 177); ">方便老师查询上课距离（重要）</text>
+    </view>
+  </view>
+  <abbr class="abbr"></abbr>
+</view>
+<view class="inputborder" style="margin-top:480rpx">
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text><text style="color:rgb(255, 255, 255);">*</text>性别： </text>
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:22%" />
+    <radio-group style="mrgin-left:50rpx" bindchange="bindSexinput">
+      <radio value="男" />男
+      <radio value="女" />女
+    </radio-group>
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(255, 255, 255);">*</text>学员年级：</text>
+    <input class="innerborder" bindinput="bindGradeinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(240, 58, 58);">*</text>求教科目：</text>
+    <input class="innerborder" bindinput="bindSubjectinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(255, 255, 255);">*</text>可上课时间：</text>
+    <input class="innerborder" bindinput="bindTimeinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(255, 255, 255);">*</text>学员情况描述：</text>
+    <textarea class="innerborder" bindinput="bindMessageinput" style="height:80rpx"/>
+  </view>
+  <abbr style="width:94%;margin-top: 52rpx;border-bottom: 1px dotted rgb(206, 206, 206);margin-left:3%;"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(255, 255, 255);">*</text>对教员要求：</text>
+    <textarea class="innerborder" bindinput="bindRequireinput" style="height:80rpx"/>
+  </view>
+  <abbr style="width:94%;margin-top: 52rpx;border-bottom: 1px dotted rgb(206, 206, 206);margin-left:3%;"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(255, 255, 255);">*</text><text style="color:rgb(255, 255, 255);">*</text>收费要求：</text>
+    <input class="innerborder" bindinput="bindWageinput"/>
+  </view>
+  <abbr class="abbr"></abbr>
+</view>
+<view style="margin-top:1170rpx">
+  <button bindtap="bindSubmitStud" class="submit">提交</button>
+</view>
+<view style="margin-top:10rpx">
+  <button  style="width:94%;height:70rpx;background-color:rgb(255, 255, 255);color:rgb(255, 255, 255);border-radius: 3%;"></button>
+</view>

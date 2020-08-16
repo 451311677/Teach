@@ -1,0 +1,12 @@
+<!--pages/background/background.wxml-->
+<view class="item">
+  <view class="title">
+    <text>后台管理</text>
+  </view>
+  <view style="margin-top:100rpx;">
+  <button bindtap="bindteacher">教员列表</button>
+  <button bindtap="binduser">用户列表</button>
+  <button bindtap="bindstudent">学员订单</button>
+  <button bindtap="bindedit">修改数据</button>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+<!--pages/beforeshare/beforeshare.wxml-->
+
+<!-- 为了让更多的孩子得到辅导，以及保证平台的订单来源，请您帮我们一个小忙，将平台分享至任意一个群聊之后，您即可发布学员信息。 -->
+
+<view class="background">
+  <view class="window">
+    <view style="font-size:10px;">
+      <text style="color:rgb(235, 235, 235)">----</text>
+    </view>
+    <view class="title">
+      <text>是否分享</text>
+    </view>
+    <view class="text">
+      <text>为了让更多的孩子得到辅导，以及保证平台的订单来源，请您帮我们一个小忙，在您发布学员信息之前，将平台分享至任意一个群聊。</text>
+    </view>
+
+    <view class="tr">
+      <view  class="th12 ">
+        <button bindtap="cancel" class="button" style="color:rgb(143, 143, 143)">取消</button>
+      </view>
+      <view  class="th12 ">
+        <button  open-type="share" class="button" style="color:rgb(2, 197, 106)">分享</button>
+      </view>
+    </view>
+  </view>
+</view>

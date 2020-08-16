@@ -1,0 +1,86 @@
+<!--pages/myuser/myuser.wxml-->
+<view style="margin-top:20rpx">
+  <abbr style="border-bottom: 1px dotted #FFFFFb; width:22%" />
+</view>
+<block wx:for="{{users}}" wx:key="newDateTime" wx:for-index="index">
+  <view class="item">
+    <view style="margin-top:20rpx">
+      <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+      <text class="font-style">姓名：</text>
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+      <text class="font-style">{{item.name}}</text>
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:15% " />
+      <text class="font-style" >{{item.identity}}</text>
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:30% " />
+      <text class="font-style" style="color:red">{{index+1}}</text>
+    </view>
+    <view style="margin-top:20rpx">
+      <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+      <text class="font-style">性别：</text>
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+      <text class="font-style">{{item.gender}}</text>
+    </view>
+    <view style="margin-top:20rpx">
+      <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+      <text class="font-style">年龄：</text>
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+      <text class="font-style">{{item.age}}</text>
+    </view>
+    <view style="margin-top:20rpx">
+      <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+      <text class="font-style">所在地：{{item.province}}-{{item.city}}</text>
+    </view>
+    <view style="margin-top:20rpx">
+      <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+      <text class="font-style">职业：</text>
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+      <text class="font-style">{{item.major}}</text>
+    </view>
+    <view style="margin-top:20rpx">
+      <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+      <text class="font-style">电话：</text>
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:4% " />
+      <text class="font-style">{{item.phone}}</text>
+    </view>
+    <view style="margin-top:20rpx">
+      <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+      <text class="font-style">Q  Q：</text>
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:6% " />
+      <text class="font-style">{{item.qq}}</text>
+    </view>
+    <view style="margin-top:20rpx">
+      <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+      <text class="font-style">微信：</text>
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:4% " />
+      <text class="font-style">{{item.weixin}}</text>
+    </view>
+    <view style="margin-top:20rpx">
+      <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+    </view>
+  </view>
+
+</block>

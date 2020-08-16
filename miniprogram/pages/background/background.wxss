@@ -1,0 +1,18 @@
+/* pages/background/background.wxss */
+.item{
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  margin-top:80rpx;
+  color:rgb(252, 16, 16);
+  font-family: "楷体";
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+}
+button{
+  background-color: rgb(36, 181, 248);
+  width:50%;
+  margin-top:30rpx;
+}

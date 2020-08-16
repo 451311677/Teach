@@ -1,0 +1,39 @@
+/* pages/myteacher/myteacher.wxss */
+
+.border-tip{
+  width: 94%;
+  border-width: 5rpx;
+  border-color: rgb(128, 157, 255);
+  border-style: solid;
+  position: absolute;
+  top:10rpx;
+  left: 3%;
+  background-color: rgb(211, 221, 255);
+  color:rgb(50, 65, 78);
+  font-size:12px;
+  font-family: "楷体";
+}
+.item{
+  display:flex;
+  flex-direction: column;
+  width: 94%;
+  border-width: 5rpx;
+  border-color: rgb(206, 206, 206);
+  border-style: solid;
+  margin-top:20rpx;
+  margin-left: 3%;
+  font-size:13px;
+ 
+}
+.item-row{
+  display:flex;
+  flex-direction: row;
+}
+.contact{
+  width:200rpx;
+  height:50rpx;
+  margin-right:40rpx;
+  background-color:rgb(50, 197, 45);
+  color:aliceblue;
+  font-size: 11px;
+}

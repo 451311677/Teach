@@ -1,0 +1,25 @@
+/* pages/edit/edit.wxss */
+.innerborder{
+ 
+  width: 60%;
+  border-width: 2rpx;
+  border-color: rgb(206, 206, 206);
+  border-style: solid;
+  position: absolute;
+  right: 3%;
+}
+.item{
+  display:flex;
+  flex-direction: column;
+  width: 94%;
+
+  margin-top:50rpx;
+  color:rgb(50, 65, 78);
+  font-size:15px;
+  font-family: "楷体";
+}
+.save{
+  background-color: rgba(42, 223, 255, 0.945);
+  width:50%;
+
+}

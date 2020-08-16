@@ -1,0 +1,58 @@
+<!--pages/lookedorder/lookedorder.wxml-->
+
+
+<block wx:for="{{lookedorders}}" wx:for-index="index" wx:key="newDateTime">
+  <view wx:if="{{item!=null}}" class="item">
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>求教科目：</text>
+      <text>{{item.subject}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>学员要求：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.require}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>学员情况：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.message}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>学员信息：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.sex}} {{item.grade}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>授课区域：</text>
+      <text style="color:rgb(27, 58, 235)">{{item.address}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>家教报酬：</text>
+      <text style="color: rgb(236, 23, 23);">{{item.wage}}</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>发布时间：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.date}}</text>
+      <text wx:if="{{item.online}}"></text>
+      <text wx:else style="color:rgb(27, 58, 235)">√</text>
+    </view>
+    <view class="item-row">
+      <abbr style="border-bottom: 1px dotted #FFFFFF; width:3% " />
+      <text>联系人：</text>
+      <text style="color:rgb(99, 98, 98)">{{item.name }}</text>
+    </view>
+   
+  </view>
+</block>
+
+<view style="margin-top:50rpx">
+  <button bindtap="bindclear" class="clear">删除所有已查看订单</button>
+</view>
+
+<view style="margin-top:20rpx">
+  <button style="width:94%;height:70rpx;background-color:rgb(255, 255, 255);color:rgb(255, 255, 255);border-radius: 3%;"></button>
+</view>

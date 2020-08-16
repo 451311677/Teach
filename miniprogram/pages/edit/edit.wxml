@@ -1,0 +1,18 @@
+<!--pages/edit/edit.wxml-->
+<view style="display:flex;flex-direction: column;margin-top:200rpx;">
+  <view class="item">
+    <text style="margin-left:40rpx;">订单总数:</text>
+    <input class="innerborder" bindinput="order" placeholder="订单总数:{{orderNum}}" />
+  </view>
+  <view class="item">
+    <text style="margin-left:40rpx;">教员总数:</text>
+    <input class="innerborder" bindinput="teacher" placeholder="教员总数:{{teacherNum}}" />
+  </view>
+  <view class="item">
+    <text style="margin-left:40rpx;">用户总数:</text>
+    <input class="innerborder" bindinput="user" placeholder="用户总数:{{userNum}}" />
+  </view>
+  <view class="item">
+  <button bindtap="save" class="save">保存</button>
+  </view>
+</view>

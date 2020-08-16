@@ -1,0 +1,20 @@
+<!--pages/messages/messages.wxml-->
+
+<view >
+  <block wx:for="{{allUsermessages}}" wx:for-index="index" wx:key="{{newDateTime}}">
+    <view class="item">
+      <text style="color:red">全员消息：</text>
+      <text>{{item.message}}</text>
+    </view>
+  </block>
+  <!-- <block wx:for="{{messages}}" wx:for-index="index" wx:key="{{newDateTime}}">
+    <view class="item">
+      <text style="color:rgb(72, 148, 235);">预约消息：</text>
+      <text>来自{{item.user[0].city}}的用户预约了您，他(她)的联系有:</text>
+      <text>电话：{{item.user[0].phone}}</text>
+      <text>QQ：{{item.user[0].qq}}</text>
+      <text>微信：{{item.user[0].weixin}}</text>
+      <text>时间：{{item.date}}</text>
+    </view>
+  </block> -->
+</view>

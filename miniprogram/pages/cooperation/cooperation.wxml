@@ -1,0 +1,23 @@
+<!--pages/cooperation/cooperation.wxml-->
+<view class="title">
+  <text> 广告合作 </text>
+</view>
+<view class="text">
+  <text>随着微信的普及，以及微信小程序的不断发展。我们逐步走向一个流量时代。我们平台有庞大的流量资源，提供首页顶部广告展示，以及分享页面视频广告.诚挚邀请有广告需求的朋友联系我们。\n平台负责人联系方式：\n微信：z4513116777</text>
+</view>
+<view style="height:20rpx;background-color:rgb(228, 228, 228);marign-top:50rpx;">
+</view>
+<view class="title" style="margin-top:30rpx;">
+  <text> 机构合作 </text>
+</view>
+<view class="text">
+  <text>本平台有丰富的学员资源，超多的优秀教员。包含大量经验丰富的老师，以及热衷兼职家教的大学生。诚挚邀请各学习机构一起合作，分享资源。借助我们的平台推广。\n平台负责人联系方式：\n微信：z4513116777</text>
+</view>
+<view style="height:20rpx;background-color:rgb(228, 228, 228);marign-top:50rpx;">
+</view>
+<view class="title" style="margin-top:30rpx;">
+  <text> 定制微信小程序 </text>
+</view>
+<view class="text">
+  <text>需要定制微信小程序，例如教育，餐饮门店小程序，兼职，招生等等小程序，都可以找本平台开发人员定制，。\n开发人员联系方式：\n微信：z4513116777</text>
+</view>

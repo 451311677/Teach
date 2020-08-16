@@ -1,0 +1,110 @@
+<!--index.wxml-->
+
+<view class="userinfo">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="dialog"> 点击获取头像昵称 </button>
+  <block wx:else>
+    <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover" ></image>
+    <text class="userinfo-nickname" >{{userInfo.nickName}}</text>
+  </block>
+</view>
+<view class="item">
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">姓名：</text>
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">{{user[0].name}}</text>
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:15% " />
+    <text class="font-style" style="color:blue" bindtap="background">{{user[0].identity}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">性别：</text>
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">{{user[0].gender}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">年龄：</text>
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">{{user[0].age}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">所在地：{{user[0].province}}-{{user[0].city}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">职业：</text>
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">{{user[0].major}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">电话：</text>
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:4% " />
+    <text class="font-style">{{user[0].phone}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">Q  Q：</text>
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:6% " />
+    <text class="font-style">{{user[0].qq}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+  <view class="item-row">
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:5% " />
+    <text class="font-style">微信：</text>
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:4% " />
+    <text class="font-style">{{user[0].weixin}}</text>
+  </view>
+  <view style="margin-top:20rpx">
+    <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+  </view>
+</view>
+<view class='history-table-wrap'>
+  <view class="table">
+    <view class="tr">
+      <view class="th1 ">
+        <image src="../../images/order.png" style="width:74%;height:91%;margin-top:5px;" bindtap="bindOrder"></image>
+      </view>
+      <view class="th1 ">
+        <image src="../../images/haveorder.png" style="width:80%;height:96%;margin-top:5px;" bindtap="bindLookedOrder"></image>
+      </view>
+      <view class="th1 ">
+        <image src="../../images/editTeacher.png" style="width:70%;height:88%;margin-top:10px;" bindtap="bindEditTeacher"></image>
+      </view>
+      <view class="th1 ">
+        <image src="../../images/editpersonal.png" style="width:80%;height:80%;margin-top:13px" bindtap="bindEditPersonal"></image>
+      </view>
+    </view>
+    <view class="tr">
+      <view class="th2 ">已发布订单</view>
+      <view class="th2 ">已预约订单</view>
+      <view class="th2 ">教员信息</view>
+      <view class="th2 ">编辑资料</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,72 @@
+{
+  "pages": [
+    
+    "pages/home/home",
+    "pages/mine/mine",
+    "pages/messages/messages",
+    "pages/students/students",
+    "pages/teachers/teachers",
+    "pages/pubstudent/pubstudent",
+    "pages/pubteacher/pubteacher",
+    "pages/beforeshare/beforeshare",
+    "pages/order/order",
+    "pages/lookedorder/lookedorder",
+    "pages/editteacher/editteacher",
+    "pages/editpersonal/editpersonal",
+    "pages/cooperation/cooperation",
+    "pages/introduce/introduce",
+    "pages/map/map",
+    "pages/myteacher/myteacher",
+    "pages/myuser/myuser",
+    "pages/reservation/reservation",
+    "pages/edit/edit",
+    "pages/mystudent/mystudent",
+    "pages/background/background",
+    "pages/look/look"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5777D1",
+    "navigationBarTitleText": "伯乐家教",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#D53E37",
+    "backgroundColor": "#f5f5f5",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-selected.png"
+      },
+      {
+        "pagePath": "pages/messages/messages",
+        "text": "消息",
+        "iconPath": "images/messages.png",
+        "selectedIconPath": "images/messages-selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine-selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "plugins": {
+    "myPlugin": {
+      "version": "1.0.6",
+      "provider": "wx5bc2ac602a747594"
+    }
+  }
+
+}

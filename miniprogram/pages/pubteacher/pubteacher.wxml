@@ -1,0 +1,88 @@
+<!--pages/pubteacher/pubteacher.wxml-->
+<view class="border-tip">
+  <text>欢迎您注册伯乐家教教员。为了更好的找到合适您的工作和为您服务，请仔细填写以下内容！*为必填</text>
+</view>
+
+<view style="margin-top:100rpx">
+  <abbr style="border-bottom: 1px dotted rgb(0, 0, 0); width:22% " />
+</view>
+<view class="item-tip" style="margin-top:110rpx">
+  <text>请填写姓名,身份</text>
+</view>
+<view class="inputborder">
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(240, 58, 58);">*</text>手机号：</text>
+    <input class="innerborder" bindinput="bindPhoneinput" maxlength='11' />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text><text style="color:rgb(255, 255, 255);">*</text>用户名：</text>
+    <input class="innerborder" bindinput="bindUserinput" placeholder="例：张教员" />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text><text style="color:rgb(240, 58, 58);">*</text>姓名：</text>
+    <input class="innerborder" bindinput="bindNameinput" />
+    <br/>
+    <view style="margin-left:21%;margin-top:63rpx">
+      <text style="margin-top:63rpx;font-size:10px;color:red ">此项将严格保密，请填写真实姓名</text>
+    </view>
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text><text style="color:rgb(255, 255, 255);">*</text>性别： </text>
+    <abbr style="border-bottom: 1px dotted #FFFFFF; width:22%" />
+    <radio-group style="mrgin-left:50rpx" bindchange="bindSexinput">
+      <radio value="男" />男
+      <radio value="女" />女
+    </radio-group>
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(255, 255, 255);">*</text>年龄：</text>
+    <input class="innerborder" bindinput="bindAgeinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(240, 58, 58);">*</text>学历：</text>
+    <input class="innerborder" bindinput="bindEducationinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(255, 255, 255);">*</text>专业：</text>
+    <input class="innerborder" bindinput="bindMajorinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+</view>
+<view class="item-tip" style="margin-top:710rpx">
+  <text>请填写您所要教授的科目以及薪水要求</text>
+</view>
+<view class="inputborder">
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(240, 58, 58);">*</text>可教授科目：</text>
+    <input class="innerborder" bindinput="bindSubjectinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(240, 58, 58);">*</text>授课区域：</text>
+    <input class="innerborder" bindinput="bindAdressinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(255, 255, 255);">*</text>授课时间：</text>
+    <input class="innerborder" bindinput="bindTimeinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+  <view style="margin-top:20rpx; display:flex;flex-direction: row;">
+    <text style="left:10rpx;"><text style="color:rgb(240, 58, 58);">*</text>薪水要求：</text>
+    <input class="innerborder" bindinput="bindWageinput" />
+  </view>
+  <abbr class="abbr"></abbr>
+</view>
+<view style="margin-top:380rpx">
+  <button bindtap="bindSubmitTeach" class="submit">提交</button>
+</view>
+
+<view style="margin-top:20rpx">
+  <button style="width:94%;height:70rpx;background-color:rgb(255, 255, 255);color:rgb(255, 255, 255);border-radius: 3%;"></button>
+</view>
